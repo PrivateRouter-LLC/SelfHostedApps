@@ -164,7 +164,23 @@
           "container": "/config"
         }
       ]
-    },	    
+    },
+    {
+      "categories": ["Tools", "Web"],
+      "description": "Self Host and Docker App, website or cloud app on-site with a PrivateRouter reverse proxy.",
+      "image": "privaterouterllc/frpc",
+      "logo": "https://raw.githubusercontent.com/PrivateRouter-LLC/SelfHostedApps/master/images/privaterouter.png",
+      "name": "privaterouter",
+      "repository": {
+	    "stackfile": "docker-compose.yml",
+	    "url": "https://github.com/PrivateRouter-LLC/docker-frpc"
+      },
+      "platform": "linux",
+      "ports": ["7000/tcp"],
+      "restart_policy": "always",
+      "title": "PrivateRouter Reverse Proxy",
+      "type": 3
+    },
       {
       "categories": ["Social", "Forum"],
       "description": "Zusam is a free and open-source way to self-host private forums for groups of friends.",
