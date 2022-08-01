@@ -4770,7 +4770,7 @@
       "ports": ["8080:80/tcp", "27960:27960/tcp"],
       "restart_policy": "unless-stopped",
       "title": "quakejs",
-      "type": 1,
+      "type": 1
      },
     {
       "categories": ["Messenger"],
