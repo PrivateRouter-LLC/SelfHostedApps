@@ -4744,6 +4744,17 @@
 					"description": "Secret path for admin access. Defaults to `/pwndrop`. This parameter only takes effect during initial install; it can later be changed in the web gui."
 				}
 			],
+			"ports": [
+				"8080:8080/tcp"
+			],
+			"volumes": [
+			{
+				"container": "/config",
+				"bind": "/volume1/docker/pwndrop/config"
+			}
+			],
+			"restart_policy": "unless-stopped"
+		},
     {
       "categories": ["Other"],
       "description": "Create your own platform on the web. Ghost is a powerful app for new-media creators to publish, share, and grow a business around their content. It comes with modern tools to build a website, publish content, send newsletters & offer paid subscriptions to members.", 
