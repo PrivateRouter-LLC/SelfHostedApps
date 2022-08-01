@@ -1386,7 +1386,7 @@
           "name": "PORT"
         }
       ],
-      "logo": "https://github.com/advplyr/audiobookshelf/raw/master/images/banner.svg",
+      "logo": "https://raw.githubusercontent.com/PrivateRouter-LLC/SelfHostedApps/master/images/audiobookshelf.png",
       "name": "Audiobookshelf",
       "platform": "linux",
       "repository": {
@@ -1444,7 +1444,7 @@
           "name": "PORT"
         }
       ],
-      "logo": "https://goauthentik.io/img/icon_left_brand.svg",
+      "logo": "https://raw.githubusercontent.com/PrivateRouter-LLC/SelfHostedApps/master/images/authentik.png",
       "name": "Authentik",
       "platform": "linux",
       "repository": {
@@ -3923,7 +3923,7 @@
       "categories": ["Network"],
       "description": "NetBox is an infrastructure resource modeling (IRM) application designed to empower network automation. Initially conceived by the network engineering team at DigitalOcean, NetBox was developed specifically to address the needs of network and infrastructure engineers.",
       "image": "netboxcommunity/netbox:latest",
-      "logo": "https://github.com/xneo1/portainer_templates/raw/master/Images/netbox_icon.svg",
+      "logo": "https://raw.githubusercontent.com/github/explore/d1f225acfde44c8aac888c942c5c41e521ee0a90/topics/netbox/netbox.png",
       "name": "netbox",
       "platform": "linux",
       "ports": ["8000:80/tcp"],
@@ -4126,7 +4126,7 @@
     {
       "categories": ["Tools"],
       "description": "Your Budgets, Calendars, Meals, Inventory, Tasks, and so much more in one simple app.For everyone in your household.On all of your devices.In the cloud or self-hosted", 
-      "logo": "https://homechart.app/images/homechart.min.776793e5e4334866f0799e8a84b8448efb1b06cb2762b2bb20f99068ac36136c.png",
+      "logo": "https://homechart.app/homechart.png",
       "name": "homechart",
       "platform": "linux",
       "repository": {
@@ -4226,7 +4226,7 @@
     {
       "categories": ["Photos", "AI"],
       "description": "PhotoPrism is an AI-powered app for browsing, organizing & sharing your photo collection. It makes use of the latest technologies to tag and find pictures automatically without getting in your way.| Copy as Custom stack and EDIT environment variables.", 
-      "logo": "https://photoprism.app/static/img/logo.svg",
+      "logo": "https://dl.photoprism.app/img/logo/logo-text-black-110.png",
       "name": "photoprism",
       "platform": "linux",
       "repository": {
