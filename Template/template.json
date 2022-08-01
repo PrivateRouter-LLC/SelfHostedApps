@@ -1,20 +1,6 @@
 {
       "categories": ["Tools", "Web"],
       "description": "Self Host and Docker App, website or cloud app on-site with a PrivateRouter reverse proxy.",
-	"env": [
-        {
-          "label": "FRPC_TOKEN",
-          "name": "FRPC_TOKEN"
-        },
-        {
-          "label": "FRPC_IP",
-          "name": "FRPC_IP"
-        },
-        {
-          "label": "FRPC_PORT",
-          "name": "FRPC_PORT"
-        }        
-      ],
       "image": "privaterouterllc/frpc",
       "logo": "https://raw.githubusercontent.com/PrivateRouter-LLC/SelfHostedApps/master/images/privaterouter.png",
       "name": "privaterouter",
