@@ -1279,6 +1279,50 @@
       ]
     },
     {
+			"categories": [
+				"Home Automation"
+			],
+			"description": "[Home Assistant Core](https://www.home-assistant.io/) - Open source home automation that puts local control and privacy first. Powered by a worldwide community of tinkerers and DIY enthusiasts. Perfect to run on a Raspberry Pi or a local server.",
+			"env": [
+				{
+					"default": "1024",
+					"description": "for GroupID",
+					"label": "PUID",
+					"name": "PUID"
+				},
+				{
+					"default": "100",
+					"description": "for UserID",
+					"label": "PGID",
+					"name": "PGID"
+				},
+				{
+					"default": "Europe/Amsterdam",
+					"description": "Specify a timezone to use for example Europe/Amsterdam",
+					"label": "TZ",
+					"name": "TZ"
+				}
+			],
+			"image": "linuxserver/homeassistant:latest",
+			"logo": "https://github.com/home-assistant/home-assistant.io/raw/next/source/images/favicon-192x192-full.png",
+			"name": "Homeassistant",
+			"network": "host",
+			"note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/homeassistant/config</p>",
+			"platform": "linux",
+			"ports": [
+				"8123:8123/tcp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "Homeassistant",
+			"type": 1,
+			"volumes": [
+				{
+					"bind": "/volume1/docker/homeassistant/config",
+					"container": "/config"
+				}
+			]
+		},
+    {
       "categories": ["Tools" , "Dashboard"],
       "description": "A dead simple static Homepage for your server to keep your services on hand, from a simple yaml configuration file.",
       "image": "b4bz/homer:latest",
