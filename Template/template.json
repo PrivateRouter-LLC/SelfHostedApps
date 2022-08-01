@@ -3376,6 +3376,24 @@
       ]
     },
     {
+      "categories": ["Tools"],
+      "description": "A remote control and remote scripting solution, built with .NET 5, Blazor, SignalR Core, and WebRTC.",
+      "image": "translucency/remotely:latest",
+      "logo": "https://s12550.pcdn.co/wp-content/uploads/2015/09/WebRTC-icon-WB.png",
+      "name": "Remotely",
+      "platform": "linux",
+      "ports": ["5000:5000/tcp"],
+      "restart_policy": "unless-stopped",
+      "title": "Remotely",
+      "type": 1,
+      "volumes": [
+        {
+          "bind": "/remotely-data",
+          "container": "/remotely-data"
+        }
+      ]
+    },
+    {
       "categories": ["Downloaders"],
       "description": "Popular torrent client with a webui for ease of use.",
       "env": [
