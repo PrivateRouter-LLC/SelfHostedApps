@@ -167,7 +167,7 @@
     },
     {
       "categories": ["Tools", "Web"],
-      "description": "Self Host and Docker App, website or cloud app on-site with a PrivateRouter reverse proxy.",
+      "description": "Self Host any Docker App, website or cloud app on-site with a PrivateRouter reverse proxy.",
       "image": "privaterouterllc/frpc",
       "logo": "https://raw.githubusercontent.com/PrivateRouter-LLC/SelfHostedApps/master/images/privaterouter.png",
       "name": "privaterouter",
