@@ -3227,6 +3227,64 @@
       ]
     },
     {
+			"categories": [
+				"Cloud",
+				"Other"
+			],
+			"description": "Seafile is an open-source, cross-platform file-hosting software system. Files are stored on a central server and can be synchronized with personal computers and mobile devices through apps. Files on the Seafile server can also be accessed directly via the server's web interface.",
+			"env": [
+				{
+					"default": "Etc/UTC",
+					"label": "Time Zone",
+					"name": "TIME_ZONE"
+				},
+				{
+					"default": "password",
+					"label": "Database Password",
+					"name": "MYSQL_ROOT_PASSWORD"
+				},
+				{
+					"default": "me@example.com",
+					"label": "Administrator Email",
+					"name": "ADMIN_EMAIL"
+				},
+				{
+					"default": "asecret",
+					"label": "Administrator Password",
+					"name": "ADMIN_PASSWORD"
+				},
+				{
+					"default": "docs.seafile.com",
+					"label": "Domain Name",
+					"name": "SERVER_HOSTNAME"
+				},
+				{
+					"label": "Enable HTTPS?",
+					"name": "ENABLE_HTTPS",
+					"select": [
+						{
+							"default": true,
+							"text": "Yes",
+							"value": "true"
+						},
+						{
+							"text": "No",
+							"value": "false"
+						}
+					]
+				}
+			],
+			"logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/seafile.png",
+			"name": "seafile",
+			"platform": "linux",
+			"repository": {
+				"stackfile": "Template/Stack/seafile.yml",
+				"url": "https://github.com/SelfhostedPro/selfhosted_templates"
+			},
+			"title": "Seafile",
+			"type": 3
+		},
+    {
       "categories": ["Downloaders"],
       "description": "SABnzbd makes Usenet as simple and streamlined as possible by automating everything we can. All you have to do is add an .nzb. SABnzbd takes over from there, where it will be automatically downloaded, verified, repaired, extracted and filed away with zero human interaction.",
       "env": [
