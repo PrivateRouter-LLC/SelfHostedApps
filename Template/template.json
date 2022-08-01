@@ -343,8 +343,8 @@
       "logo": "https://raw.githubusercontent.com/PrivateRouter-LLC/SelfHostedApps/master/images/filepizza.png",
       "name": "filepizza",
       "repository": {
-	    "stackfile": "main/Template/Stack/filepizza.yml",
-	    "url": "https://raw.githubusercontent.com/PrivateRouter-LLC/SelfHostedApps"
+	    "stackfile": "Template/Stack/filepizza.yml",
+	    "url": "https://github.com/PrivateRouter-LLC/SelfHostedApps/"
       },
       "platform": "linux",
       "ports": ["3333:3333/tcp"],
