@@ -170,28 +170,28 @@
       "description": "Self Host any Docker App, website or cloud app on-site with a PrivateRouter reverse proxy. Get unlimited reverse proxy hosting for $9/m at PrivateRouter.com",
       "env": [
         {
-          "default": "yourtoken",
           "label": "FRPC_TOKEN",
-          "name": "FRPC_TOKEN"
+          "name": "FRPC_TOKEN",
+          "set": "yourtoken"
         },
         {
-          "default": "1.2.3.4",
           "label": "FRPC_IP",
-          "name": "FRPC_IP"
+          "name": "FRPC_IP",
+          "set": "1.2.3.4"
         }
         {
-          "default": "http,tcp,80 https,tcp,443",
           "label": "FRPC_SERVICES",
-          "name": "FRPC_SERVICES"
+          "name": "FRPC_SERVICES",
+          "set": "http,tcp,80 https,tcp,443"
         }
       ],
       "image": "privaterouterllc/frpc",
       "logo": "https://raw.githubusercontent.com/PrivateRouter-LLC/SelfHostedApps/master/images/privaterouter.png",
-      "name": "PrivateRouter",
+      "name": "privaterouter",
       "platform": "linux",
       "ports": ["7000:7000/tcp"],
       "restart_policy": "unless-stopped",
-      "title": "PrivateRouter",
+      "title": "privaterouter",
       "type": 1,
       "volumes": [
         {
