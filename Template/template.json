@@ -2274,6 +2274,24 @@
       ]
     },
     {
+      "categories": ["Tools"],
+      "description": "Mailpile is a self-hosted, modern web email client with good encryption support.",
+      "image": "florianpiesche/mailpile",
+      "logo": "https://alternative.me/media/512/mailpile-thumbnail-zr9ikt9mcefbjkox-c.png",
+      "name": "Mailpile",
+      "platform": "linux",
+      "ports": ["8080:80/tcp"],
+      "restart_policy": "unless-stopped",
+      "title": "Mailpile",
+      "type": 1,
+      "volumes": [
+        {
+          "bind": "/home/mailpile/.local/share/Mailpile",
+          "container": "/mailpile"
+        }
+      ]
+    },
+    {
       "categories": ["Video", "Tools"],
       "description": "Minisatip is a multi-threaded satip server version 1.2 that runs under Linux and it was tested with DVB-S, DVB-S2, DVB-T, DVB-T2, DVB-C, DVB-C2, ATSC and ISDB-T cards. The application is designed to stream the requested data to multiple clients (even with one dvb card) at the same time while opening different pids.",
       "env": [
