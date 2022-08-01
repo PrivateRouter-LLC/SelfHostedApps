@@ -3765,7 +3765,7 @@
       "platform": "linux",
       "ports": ["9091:9091/tcp", "51413:51413/tcp"],
       "restart_policy": "unless-stopped",
-      "title": "Transmission",
+      "title": "TorGuard Transmission",
       "type": 1,
       "volumes": [
         {
@@ -3783,7 +3783,7 @@
     },
     {
       "categories": ["VPN", "Tools"],
-      "description": "This container contains OpenVPN and Transmission with a configuration where Transmission is running only when OpenVPN has an active tunnel. It bundles configuration files for many popular VPN providers to make the setup easier.",
+      "description": "This container contains TorGuard OpenVPN and Transmission with a configuration where Transmission is running only when OpenVPN has an active tunnel. It bundles configuration files for many popular VPN providers to make the setup easier.",
       "env": [
         {
           "default": "1000",
@@ -3796,7 +3796,7 @@
           "name": "PGID"
         },
         {
-          "default": "MULLVAD",
+          "default": "TORGUARD",
           "description": "https://haugene.github.io/docker-transmission-openvpn/supported-providers/",
           "label": "OPENVPN_PROVIDER",
           "name": "OPENVPN_PROVIDER"
