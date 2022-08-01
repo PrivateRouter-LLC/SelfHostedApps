@@ -3783,7 +3783,7 @@
     },
     {
       "categories": ["VPN", "Tools"],
-      "description": "This container contains TorGuard OpenVPN and Transmission with a configuration where Transmission is running only when OpenVPN has an active tunnel. It bundles configuration files for many popular VPN providers to make the setup easier.",
+      "description": "This container contains TorGuard OpenVPN and Transmission with a configuration where Transmission is running only when TorGuard OpenVPN has an active tunnel. It bundles configuration files for many popular VPN providers to make the setup easier.",
       "env": [
         {
           "default": "1000",
@@ -3824,7 +3824,7 @@
       "platform": "linux",
       "ports": ["9091:9091/tcp"],
       "restart_policy": "unless-stopped",
-      "title": "Transmission-OpenVPN",
+      "title": "Transmission-TorGuard",
       "type": 1,
       "volumes": [
         {
