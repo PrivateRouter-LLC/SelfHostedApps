@@ -172,8 +172,8 @@
       "logo": "https://raw.githubusercontent.com/PrivateRouter-LLC/SelfHostedApps/master/images/privaterouter.png",
       "name": "privaterouter",
       "repository": {
-	    "stackfile": "docker-compose.yml",
-	    "url": "https://github.com/PrivateRouter-LLC/docker-frpc"
+	    "stackfile": "Template/Stack/reverseproxy.yml",
+	    "url": "https://github.com/PrivateRouter-LLC/SelfHostedApps"
       },
       "platform": "linux",
       "ports": ["7000/tcp"],
