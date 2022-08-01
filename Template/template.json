@@ -1993,6 +1993,38 @@
       ]
     },
     {
+			"categories": [
+				"Other",
+				"Tools",
+				"Games"
+			],
+			"description": "This docker image provides a Minecraft Server that will automatically download the latest stable version at startup. You can also run/upgrade to any specific version or the latest snapshot. See the Versions section below for more information.",
+			"env": [
+				{
+					"default": "TRUE",
+					"label": "EULA",
+					"name": "EULA"
+				}
+			],
+			"image": "itzg/minecraft-server:latest",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/minecraft.png",
+			"name": "minecraft",
+			"note": "<h3>Template created by Pi-Hosted Series</h3><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://www.minecraft.net/en-us\" target=\"_blank\">https://www.minecraft.net/en-us</a><br><b>Official Docker Documentation: </b><a href=\"https://github.com/itzg/docker-minecraft-server#using-docker-compose\" target=\"_blank\">https://github.com/itzg/docker-minecraft-server#using-docker-compose</a><br><br><br>",
+			"platform": "linux",
+			"ports": [
+				"25565:25565/tcp"
+			],
+			"restart_polocy": "unless-stopped",
+			"title": "Minecraft Server",
+			"type": 1,
+			"volumes": [
+				{
+					"bind": "/portainer/Files/AppData/Config/Minecraft-data",
+					"container": "/data"
+				}
+			]
+		},
+    {
       "categories": ["Other"],
       "description": "McMyAdmin 2 is the leading web control panel and administration console for Minecraft servers.",
       "env": [
