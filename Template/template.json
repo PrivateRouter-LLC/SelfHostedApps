@@ -3201,6 +3201,49 @@
       ]
     },
     {
+    "categories": ["Chat Server"],
+    "description": "Rocket.Chat Server",
+    "logo": "https://raw.githubusercontent.com/portapps/rocketchat-portable/master/res/papp.png",
+    "note": "Rocket.Chat Server Container",
+    "platform": "linux",
+    "repository": {
+      "stackfile": "Template/Stack/rocketchat.yml",
+      "url": "https://github.com/mycroftwilde/portainer_templates"
+    },
+    "title": "Rocket Chat",
+    "type": 3
+  },  
+		  {
+    "categories": ["Notes Server"],
+    "description": "Joplin is an open-source note-taking app",
+    "env": [
+      {
+        "default": "22300",
+        "label": "PORT",
+        "name": "PORT"
+      },
+	       {
+        "default": "http://joplin.yourdomain.tld:22300",
+        "label": "URL",
+        "name": "URL"
+      }
+	    
+	    
+	    
+	    
+	    
+    ],
+    "logo": "https://raw.githubusercontent.com/laurent22/joplin/master/Assets/SquareIcon512.png",
+    "note": "Joplin is an open-source note-taking app",
+    "platform": "linux",
+    "repository": {
+      "stackfile": "Template/Stack/joplin.yml",
+      "url": "https://github.com/mycroftwilde/portainer_templates"
+    },
+    "title": "Joplin",
+    "type": 3
+  },  
+    {
       "categories": ["Backup", "Cloud", "Tools"],
       "description": "Resilio Sync (formerly BitTorrent Sync) uses the BitTorrent protocol to sync files and folders between all of your devices. There are both free and paid versions, this container supports both.",
       "env": [
