@@ -1,0 +1,20 @@
+{
+  "name": "selfhostedapps",
+  "version": "1.0.0",
+  "description": "Portainer Templates for Selfhosted Apps with PrivateRouter",
+  "private": true,
+  "devDependencies": {
+    "jsonlint": "^1.6.3",
+    "yaml-validator": "^3.0.1"
+  },
+  "scripts": {
+    "pretest": "jsonlint Template/template.json --quiet",
+    "test": "yaml-validator Template/Stack/*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PrivateRouter-LLC/SelfHostedApps.git"
+  },
+  "author": "PrivateRouter",
+  "license": "GPLv3"
+}
