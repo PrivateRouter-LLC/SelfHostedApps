@@ -522,6 +522,84 @@
       ]
     },
     {
+			"categories": [
+				"Other",
+				"Tools"
+			],
+			"description": "A Docker container for Chrome.",
+			"env": [
+				{
+					"default": "5800",
+					"label": "WEB_PORT",
+					"name": "WEB_PORT"
+				},
+				{
+					"default": "5900",
+					"label": "VNC_PORT",
+					"name": "VNC_PORT"
+				},
+				{
+					"default": "1",
+					"label": "Keep App Running",
+					"name": "KEEP_APP_RUNNING"
+				},
+				{
+					"default": "1280",
+					"label": "Display Width",
+					"name": "DISPLAY_WIDTH"
+				},
+				{
+					"default": "768",
+					"label": "Display Height",
+					"name": "DISPLAY_HEIGHT"
+				},
+				{
+					"default": "0",
+					"label": "Secure Connection",
+					"name": "SECURE_CONNECTION"
+				},
+				{
+					"label": "VNC Password",
+					"name": "VNC_PASSWORD",
+					"description": "Note: Password is limited to 8 characters"
+				},
+				{
+					"default": "1000",
+					"label": "User ID",
+					"name": "USER_ID"
+				},
+				{
+					"default": "1000",
+					"label": "Group ID",
+					"name": "GROUP_ID"
+				},
+				{
+					"default": "Europe/London",
+					"label": "Timezone",
+					"name": "TZ"
+				},
+				{
+					"default": "2GB",
+					"label": "Shared Memory Size",
+					"name": "SHM_SIZE"
+				},
+				{
+					"default": "-nocursor",
+					"label": "X11VNC Extra Options",
+					"name": "X11VNC_EXTRA_OPTS"
+				}
+			],
+			"logo": "https://raw.githubusercontent.com/OliverCullimore/portainer-templates/master/images/chrome.png",
+			"name": "googlechrome",
+			"platform": "linux",
+			"repository": {
+				"stackfile": "stacks/chrome.yml",
+				"url": "https://github.com/OliverCullimore/portainer-templates"
+			},
+			"title": "Google Chrome",
+			"type": 3
+		},
+    {
       "categories": ["Tools", "Photos"],
       "description": "Chevereto is a powerful and fast image hosting script that allows you to create your very own full featured image hosting website in just minutes. Please note that this offers only the free Chevereto version.",
       "env": [
