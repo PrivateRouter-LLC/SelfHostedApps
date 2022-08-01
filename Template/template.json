@@ -354,19 +354,21 @@
     },
     {
       "categories": ["Cloud", "Productivity", "Tools", "Web"],
-      "description": "Using WebRTC, FilePizza eliminates the initial upload step required by other web-based file sharing services.File Pizza offers peer-to-peer file transfers in your browser",
-      "image": "kern/filepizza:latest",
+      "description": "Using WebRTC, FilePizza eliminates the initial upload step required by other web-based file sharing services.File Pizza offers peer-to-peer file transfers in your browser.",
+      "image": "kern/filepizza:master",
       "logo": "https://raw.githubusercontent.com/PrivateRouter-LLC/SelfHostedApps/master/images/filepizza.png",
       "name": "filepizza",
-      "repository": {
-	    "stackfile": "Template/Stack/filepizza.yml",
-	    "url": "https://github.com/PrivateRouter-LLC/SelfHostedApps/"
-      },
       "platform": "linux",
       "ports": ["3333:3333/tcp"],
-      "restart_policy": "always",
-      "title": "FilePizza P2P File Transfers",
-      "type": 3
+      "restart_policy": "unless-stopped",
+      "title": "filepizza",
+      "type": 1,
+      "volumes": [
+        {
+          "bind": "/portainer/Files/AppData/Config/filepizza",
+          "container": "/config"
+        }
+      ]
     },	  
     {
       "categories": ["Productivity"],
