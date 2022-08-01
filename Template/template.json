@@ -4754,6 +4754,25 @@
       ]
     },
     {
+      "categories": ["Video", "Games"],
+      "description": "A fully local and Dockerized quakejs server. Independent, unadulterated, and free from the middleman.",
+      "env": [
+        {
+          "default": "8080",
+          "label": "HTTP_PORT",
+          "name": "HTTP_PORT"
+        }
+       ],
+      "image": "treyyoder/quakejs:latest",
+      "logo": "https://upload.wikimedia.org/wikipedia/en/a/a1/Quake3Title.jpg",
+      "name": "quakejs",
+      "platform": "linux",
+      "ports": ["8080:80/tcp", "27960:27960/tcp"],
+      "restart_policy": "unless-stopped",
+      "title": "quakejs",
+      "type": 1,
+     },
+    {
       "categories": ["Messenger"],
       "description": "ZNC is an IRC network bouncer or BNC. It can detach the client from the actual IRC server, and also from selected channels. Multiple clients from different locations can connect to a single ZNC account simultaneously and therefore appear under the same nickname on IRC.",
       "env": [
